@@ -1,17 +1,19 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-} from 'react-native';
+import { StatusBar, StyleSheet, View } from 'react-native';
+import Main from "./src/navigators";
 
 const App = () => {
-  return <View style={styles.container} />
+  return (
+    <View style={styles.container}>
+      <StatusBar translucent={true} backgroundColor="transparent" barStyle={'dark-content'} />
+      <Main />
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: 'pink'
+    flex: 1
   }
 });
 
