@@ -35,5 +35,55 @@ export const SearchScreenStyles = StyleSheet.create({
         fontSize: moderateScale(18),
         fontWeight: 'bold',
         paddingTop: verticalScale(26)
-    }
+    },
+    txtServiceItem: (isSelect) => ({
+        textAlign: 'center',
+        marginTop: verticalScale(11),
+        color: isSelect ? color.pink : color.silver
+    }),
+    serviceItem: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    iconService: (isSelect) => ({
+        width: verticalScale(52),
+        height: verticalScale(52),
+        borderRadius: verticalScale(26),
+        borderColor: isSelect ? color.pink : color.silver,
+        borderWidth: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    }),
+    serviceView: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginVertical: verticalScale(25)
+    },
+    txtSection: {
+        fontSize: moderateScale(16),
+        fontWeight: 'bold',
+        marginLeft: scale(6)
+    },
+    titleSection: {
+        marginTop: verticalScale(28),
+        marginBottom: verticalScale(13),
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    voteView: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+    },
+    voteItem: (isSelect) => ({
+        borderRadius: 4,
+        height: verticalScale(34),
+        width: scale(91),
+        borderWidth: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderColor: color.pink,
+        backgroundColor: isSelect ? color.pink : color.white
+    })
 });
